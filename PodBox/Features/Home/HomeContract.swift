@@ -9,8 +9,8 @@
 import Foundation
 
 // MARK: View Output (Presenter -> View)
-protocol PresenterToViewHomeProtocol {
-   
+protocol PresenterToViewHomeProtocol: AnyObject {
+    
 }
 
 // MARK: View Input (View -> Presenter)

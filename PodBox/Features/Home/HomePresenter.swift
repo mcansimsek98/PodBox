@@ -11,7 +11,7 @@ import Foundation
 final class HomePresenter: ViewToPresenterHomeProtocol {
 
     // MARK: Properties
-    var view: PresenterToViewHomeProtocol?
+    weak var view: PresenterToViewHomeProtocol?
     var interactor: PresenterToInteractorHomeProtocol?
     var router: PresenterToRouterHomeProtocol?
 

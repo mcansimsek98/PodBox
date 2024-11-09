@@ -15,7 +15,12 @@ final class HomeVC: BaseViewController<HomeView> {
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view = HomeView()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        presenter?.view = nil
     }
 }
 

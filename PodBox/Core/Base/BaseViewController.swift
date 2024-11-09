@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BaseViewController<T: UIView>: UIViewController, NavigationDelegate {
+class BaseViewController<T: UIView>: UIViewController, NavigationDelegate, MainThreadRunner {
     var contentView: T?
     
     // MARK: - Lifecycle Methods

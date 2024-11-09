@@ -7,10 +7,11 @@
 
 import UIKit
 
-class BaseView: UIView {
+class BaseView: UIView, MainThreadRunner {
     
     init() {
         super.init(frame: .zero)
+        backgroundColor = .systemBackground
         setupView()
         setupConstraints()
     }
