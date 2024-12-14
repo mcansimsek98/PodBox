@@ -11,7 +11,7 @@ class BaseView: UIView, MainThreadRunner {
     
     init() {
         super.init(frame: .zero)
-        backgroundColor = .systemBackground
+        backgroundColor = .podboxBacground
         setupView()
         setupConstraints()
     }
@@ -23,10 +23,4 @@ class BaseView: UIView, MainThreadRunner {
     func setupView() {}
     
     func setupConstraints() {}
-    
-    func addSubviews(_ views: UIView...) {
-        for view in views {
-            addSubview(view)
-        }
-    }
 }

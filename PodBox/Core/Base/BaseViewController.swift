@@ -18,6 +18,5 @@ class BaseViewController<T: UIView>: UIViewController, NavigationDelegate, MainT
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
     }
 }
